@@ -1,0 +1,21 @@
+header {
+    background-color: $header-color; 
+}
+.header__logo{
+    width: 10rem;
+    @include media(lg){
+        margin-left: 10rem;
+    }
+}
+
+.navbar-custom {
+    font-size: 1.5em;
+    color: $font-color;
+}
+
+.dropdown-menu-custom {
+    background-color: $header-color; 
+    border:none;
+    font-size: 1em;
+    color: $font-color;
+}
