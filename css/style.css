@@ -593,16 +593,54 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .p404 h1 {
-  font-size: 5rem;
-  color: lightgray;
+  color: white;
   position: absolute;
 }
 
 .p404 img {
   position: relative;
+}
+
+@media (max-width: 767px) {
+  .p404 h1 {
+    font-size: 2rem;
+  }
+  .p404 img {
+    width: 20em;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  .p404 h1 {
+    font-size: 3rem;
+  }
+  .p404 img {
+    size: 15em;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  .p404 h1 {
+    font-size: 4rem;
+  }
+  .p404 img {
+    width: 35em;
+  }
+}
+
+@media (min-width: 1360px) {
+  .p404 h1 {
+    font-size: 8em;
+  }
+  .p404 img {
+    width: 40em;
+  }
 }
 
 footer {
