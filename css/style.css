@@ -75,12 +75,61 @@ main {
   }
 }
 
+@media (max-width: 767px) {
+  .card-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  .card-group {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    grid-row: auto;
+  }
+}
+
+@media (min-width: 1023px) and (max-width: 1360px) {
+  .card-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media (min-width: 1360px) {
+  .card-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 2.5em;
+  }
+}
+
 .card {
   margin: 1rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #fdb5f7;
+  background-color: #a1549b;
   border: none;
   color: #0e110e;
 }
@@ -93,7 +142,7 @@ main {
 
 @media (min-width: 767px) and (max-width: 1023px) {
   .card {
-    height: 30em;
+    height: 31em;
   }
 }
 
@@ -105,7 +154,7 @@ main {
 
 @media (min-width: 1360px) {
   .card {
-    height: 37em;
+    height: 35em;
   }
 }
 
@@ -132,13 +181,13 @@ main {
 
 @media (min-width: 1023px) and (max-width: 1360px) {
   .card img {
-    height: 15em;
+    height: 13em;
   }
 }
 
 @media (min-width: 1360px) {
   .card img {
-    height: 20em;
+    height: 17em;
   }
 }
 
@@ -173,8 +222,8 @@ main {
     font-size: 2rem;
   }
   .contacto form {
-    margin-left: .5em;
-    width: 15em;
+    margin-left: .1em;
+    width: 20em;
   }
 }
 
@@ -218,7 +267,7 @@ main {
 
 @media (max-width: 767px) {
   .enviar {
-    margin-left: .1em;
+    margin-left: 5em;
   }
 }
 

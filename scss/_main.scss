@@ -25,6 +25,28 @@ main{
     }
 }
 
+.card-group {
+  @include media(xs){
+    display: flex;
+    flex-direction: column;
+  }
+  @include media(sm){
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row: auto;
+  }
+  @include media(md){
+    display: flex;
+    flex-direction: row;
+  }
+  @include media(lg){
+    display: flex;
+    flex-direction: row;
+    margin: 2.5em;
+  }
+}
+
 .card {
   margin: 1rem;
   align-items: center;
@@ -35,13 +57,13 @@ main{
     width: 10em;
   }
   @include media(sm){
-    height: 30em;
+    height: 31em;
   }
   @include media(md){
     height: 32em;
   }
   @include media(lg){
-    height: 37em;
+    height: 35em;
   }
   img {
     display: flex;
@@ -55,10 +77,10 @@ main{
       height: 10em;
     }
     @include media(md){
-      height: 15em;
+      height: 13em;
     }
     @include media(lg){
-      height: 20em;
+      height: 17em;
     }
   }
 }
@@ -82,8 +104,8 @@ main{
         font-size: 2rem;
       }
       form {
-        margin-left: .5em;
-        width: 15em;
+        margin-left: .1em;
+        width: 20em;
       }
     }
     @include media(sm){
@@ -117,7 +139,7 @@ main{
     flex-direction: row;
     padding-bottom: 1em;
     @include media(xs){
-      margin-left: .1em;
+      margin-left: 5em;
     }
     @include media(sm){
       margin-left: 30em;
